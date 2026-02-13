@@ -1,0 +1,22 @@
+[tool.black]
+line-length = 88
+target-version = ['py313']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | \.mypy_cache
+  | \.pytest_cache
+  | \.idea
+  | \.vscode
+  | build
+  | dist
+)/
+'''
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
+exclude = [".git", "__pycache__", ".venv", "build", "dist"]
+max-complexity = 10
