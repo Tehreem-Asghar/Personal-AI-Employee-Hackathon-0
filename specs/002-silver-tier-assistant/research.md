@@ -18,5 +18,9 @@
 ## Decision: Windows Task Scheduler for "Heartbeat"
 - **Rationale**: To simulate 24/7 operation without a server, we will configure Task Scheduler to run the Python scripts every 15 minutes. This ensures the "Senses" are checked regularly even if the terminal is closed.
 
-## Decision: Planner Logic
-- **Rationale**: A utility will be created to wrap Claude's reasoning into a consistent `Plan.md` template. This ensures that every task follows a predictable format: Objective → Steps → Approval status.
+## Decision: LinkedIn Posting via Playwright
+- **Rationale**: LinkedIn's official API is restrictive and requires a vetted app. Playwright allows the system to post as the user using their local browser session, maintaining the "Local-First" principle.
+- **Workflow**: 
+    1. Agent drafts post in `/Pending_Approval`.
+    2. User moves to `/Approved`.
+    3. `ApprovalHandler` calls `linkedin_post.py` to publish the content.

@@ -1,0 +1,18 @@
+Write a high-quality LinkedIn post for a passionate Full Stack Developer from Karachi, Pakistan who is currently working on an AI Agent / Automation project for a hackathon.
+
+Post requirements:
+
+- Tone: Confident, inspiring, authentic, and professional
+- Language: Simple and engaging (not too complex)
+- Structure:
+  1. Strong hook in first 2 lines
+  2. What problem I am solving
+  3. Technologies I am using (Python, AI Agents, Gmail API, WhatsApp Automation, Playwright, etc.)
+  4. What I learned during this process
+  5. End with gratitude (include “Alhamdulillah” naturally)
+  6. Add relevant tech hashtags at the end
+
+- Keep it 8–15 lines
+- Make it impactful and scroll-stopping
+- Avoid emojis overload (use minimal and professional ones)
+- Make it sound like a real developer sharing progress, not marketing content

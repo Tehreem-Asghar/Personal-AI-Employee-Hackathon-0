@@ -28,7 +28,7 @@ class BaseWatcher(ABC):
         '''Create .md file in Needs_Action folder'''
         pass
 
-    def run(self):
+    def run(self, once=False):
         self.logger.info(f'Starting {self.__class__.__name__} watcher...')
         while True:
             try:
@@ -38,6 +38,11 @@ class BaseWatcher(ABC):
                     self.logger.info(f"Created action file: {action_file_path}")
             except Exception as e:
                 self.logger.error(f'Error in {self.__class__.__name__}: {e}')
+            
+            if once:
+                self.logger.info(f"{self.__class__.__name__} completed single run.")
+                break
+                
             time.sleep(self.check_interval)
 
 if __name__ == "__main__":

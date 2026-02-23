@@ -14,4 +14,38 @@ Thumbs.db
 .vscode/
 .idea/
 *.log
-.env*
+heartbeat_debug.log
+
+# Secrets & Credentials (CRITICAL)
+.env
+.env.local
+.env.*
+token.json
+credentials.json
+
+# Browser Sessions & Automation
+.playwright_context/
+*.png
+*.html
+
+# # AI Employee Vault (Personal Data)
+# # Hum chahte hain ke GitHub par folders nazar aayen, lekin files nahi.
+# AI_Employee_Vault/Inbox/*
+# AI_Employee_Vault/Needs_Action/*
+# AI_Employee_Vault/Pending_Approval/*
+# AI_Employee_Vault/Approved/*
+# AI_Employee_Vault/In_Progress/*
+# AI_Employee_Vault/Done/*
+# AI_Employee_Vault/Plans/*
+# AI_Employee_Vault/Logs/*
+# AI_Employee_Vault/.processed_gmail_ids.json
+
+# # Keep the directory structure but ignore contents
+# !AI_Employee_Vault/Inbox/.gitkeep
+# !AI_Employee_Vault/Needs_Action/.gitkeep
+# !AI_Employee_Vault/Pending_Approval/.gitkeep
+# !AI_Employee_Vault/Approved/.gitkeep
+# !AI_Employee_Vault/In_Progress/.gitkeep
+# !AI_Employee_Vault/Done/.gitkeep
+# !AI_Employee_Vault/Plans/.gitkeep
+# !AI_Employee_Vault/Logs/.gitkeep

@@ -19,6 +19,8 @@ def setup_vault_structure():
             get_needs_action_path(vault_root),
             get_done_path(vault_root),
             get_logs_path(vault_root),
+            vault_root / "Approved",
+            vault_root / "Plans",
         ]
 
         for folder in folders_to_create:

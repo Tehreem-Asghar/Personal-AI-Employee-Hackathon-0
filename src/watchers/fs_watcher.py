@@ -124,15 +124,32 @@ New file detected and moved for processing.
         self.observer.join()
 
 if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--once", action="store_true", help="Run the watcher only once and exit")
+    args = parser.parse_args()
+
     try:
         vault_root = find_vault_root()
-    except FileNotFoundError:
-        # Create a dummy vault for testing if not found
-        Path("AI_Employee_Vault/Inbox").mkdir(parents=True, exist_ok=True)
-        Path("AI_Employee_Vault/Needs_Action").mkdir(parents=True, exist_ok=True)
-        Path("AI_Employee_Vault/Logs").mkdir(parents=True, exist_ok=True)
-        vault_root = find_vault_root() # Find it again now that it's created
-
-    print(f"Monitoring: {get_inbox_path(vault_root)}")
-    fs_watcher = FileSystemWatcher(vault_root)
-    fs_watcher.run()
+        fs_watcher = FileSystemWatcher(vault_root)
+        # For fs_watcher, 'once' might just process existing files in Inbox
+        if args.once:
+            print(f"\n--- 📁 FILE SYSTEM PERCEPTION LAYER ---")
+            # Manually trigger a check for existing files
+            from watchdog.events import FileCreatedEvent
+            inbox = get_inbox_path(vault_root)
+            found_files = 0
+            for file in inbox.iterdir():
+                if file.is_file():
+                    found_files += 1
+                    action_file = fs_watcher.create_action_file(FileCreatedEvent(str(file)))
+                    print(f"   ✅ Detected & Processed: {file.name} -> {action_file.name}")
+            
+            if found_files == 0:
+                print("   ℹ️  Inbox is clean. No new files to process.")
+            
+            print("--- FILE SYSTEM CHECK COMPLETE ---\n")
+        else:
+            fs_watcher.run()
+    except Exception as e:
+        print(f"Failed to start File System Watcher: {e}")

@@ -1,0 +1,450 @@
+[
+  {
+    "timestamp": "2026-02-24T02:41:02.964016",
+    "action_type": "whatsapp_perception",
+    "actor": "whatsapp_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\WHATSAPP_Tehreem_Telinor_1771882862.md",
+    "result": "success",
+    "details": {
+      "chat": "Tehreem Telinor"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:39.554935",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Anti_-_Piracy_Intern__Pi_Pakistan_Pvt_Limited_19c8c4b7.md",
+    "result": "success",
+    "details": {
+      "subject": "Anti - Piracy Intern @ Pi Pakistan Pvt. Limited",
+      "from": "Indeed <donotreply@match.indeed.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:39.895397",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_If_Youre_Not_Getting_Work_in_2026_Read_This_19c8bf0b.md",
+    "result": "success",
+    "details": {
+      "subject": "If You\u2019re Not Getting Work in 2026, Read This",
+      "from": "Hisham Sarwar via LinkedIn <newsletters-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:40.301062",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Catch_API_issues_before_they_catch_you_19c8b2f4.md",
+    "result": "success",
+    "details": {
+      "subject": "Catch API issues before they catch you",
+      "from": "\"Nikol (UptimeRobot)\" <info@ses.uptimerobot.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:40.720343",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_I_want_to_connect_19c8af50.md",
+    "result": "success",
+    "details": {
+      "subject": "I want to connect",
+      "from": "Sajjad Ullah <invitations@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:41.130571",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_I_want_to_connect_19c8aeaa.md",
+    "result": "success",
+    "details": {
+      "subject": "I want to connect",
+      "from": "Uzair Waseem <invitations@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:41.538333",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Why_Your_LinkedIn_Presence_Affects_Hiring_Outcomes_19c89f3a.md",
+    "result": "success",
+    "details": {
+      "subject": "Why Your LinkedIn Presence Affects Hiring Outcomes",
+      "from": "Sehar Malik via LinkedIn <newsletters-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:41.970574",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_New_Speakers__Workshops_Added_19c89980.md",
+    "result": "success",
+    "details": {
+      "subject": "\ud83d\udd25 New Speakers + Workshops Added",
+      "from": "JSNation <hi@jsnation.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:42.323001",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Second_Reminder_Pending_Payment__Urgent_Project_De_19c89724.md",
+    "result": "success",
+    "details": {
+      "subject": "Second Reminder: Pending Payment & Urgent Project Deadline",
+      "from": "CloudTeach Hub <cloudteachhub@gmail.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:42.666322",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Urgent_Invoice_Budget__Meeting_Schedule_19c89578.md",
+    "result": "success",
+    "details": {
+      "subject": "Urgent: Invoice, Budget & Meeting Schedule",
+      "from": "CloudTeach Hub <cloudteachhub@gmail.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:43.203748",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Keystone_Recruitment_is_hiring_in_Pakistan_19c88c29.md",
+    "result": "success",
+    "details": {
+      "subject": "Keystone Recruitment is hiring in Pakistan",
+      "from": "LinkedIn Job Alerts <jobalerts-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:43.600297",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Top_10_FREE_Visual_Studio_Code_Extensions_That_Act_19c885e3.md",
+    "result": "success",
+    "details": {
+      "subject": "Top 10 FREE Visual Studio Code Extensions That Actually Improve Developer Productivity | Jaytech in OSINT Team",
+      "from": "Medium Daily Digest <noreply@medium.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:43.992615",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Free_Ebook_-_How_to_Create_stories_using_AI_Voice__19c85e93.md",
+    "result": "success",
+    "details": {
+      "subject": "\ud83d\udcda Free Ebook - How to Create stories using AI Voice with ElevenLabs",
+      "from": "\"AI Central | ChatGPT & Generative AI Tutorials, Prompts & Use Cases for Gemini, DeepSeek, Claude via LinkedIn\" <newsletters-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:44.370849",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_urgent_meeting_19c84f7e.md",
+    "result": "success",
+    "details": {
+      "subject": "urgent meeting",
+      "from": "CloudTeach Hub <cloudteachhub@gmail.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:44.691786",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_help_19c84eb8.md",
+    "result": "success",
+    "details": {
+      "subject": "help",
+      "from": "CloudTeach Hub <cloudteachhub@gmail.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:45.151598",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_MadiLinks_is_hiring_in_Pakistan_19c839c3.md",
+    "result": "success",
+    "details": {
+      "subject": "MadiLinks is hiring in Pakistan",
+      "from": "LinkedIn Job Alerts <jobalerts-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:45.665762",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_You_appeared_in_20_searches_19c832e4.md",
+    "result": "success",
+    "details": {
+      "subject": "You appeared in 20 searches",
+      "from": "LinkedIn <notifications-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:46.248621",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Tehreem_add_Hadiqa_Jalal_19c82c06.md",
+    "result": "success",
+    "details": {
+      "subject": "Tehreem, add Hadiqa Jalal \ud83d\udcac",
+      "from": "LinkedIn <messages-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:46.675209",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_You_appeared_in_20_searches_19c82529.md",
+    "result": "success",
+    "details": {
+      "subject": "You appeared in 20 searches",
+      "from": "LinkedIn <notifications-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:47.079997",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_I_want_to_connect_19c81e4b.md",
+    "result": "success",
+    "details": {
+      "subject": "I want to connect",
+      "from": "Asim Khan <invitations@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:52:47.471779",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_National_Incubation_Center_Karachi_just_posted_som_19c81773.md",
+    "result": "success",
+    "details": {
+      "subject": "National Incubation Center Karachi just posted something that might be of interest to you",
+      "from": "LinkedIn <updates-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:53:18.981226",
+    "action_type": "file_move",
+    "actor": "fs_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\FILE_LINKEDIN_Post.txt",
+    "result": "success",
+    "details": {
+      "original_path": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Inbox\\LINKEDIN_Post.txt"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:53:19.021226",
+    "action_type": "metadata_create",
+    "actor": "fs_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\FILE_LINKEDIN_Post.md",
+    "result": "success",
+    "details": {
+      "original_file": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\FILE_LINKEDIN_Post.txt"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:53:34.496165",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "FILE_LINKEDIN_Post.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T02:53:36.126469",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_Anti_-_Piracy_Intern__Pi_Pakistan_Pvt_Limited_19c8c4b7.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T02:53:38.071035",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_Catch_API_issues_before_they_catch_you_19c8b2f4.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T02:53:40.793263",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_Free_Ebook_-_How_to_Create_stories_using_AI_Voice__19c85e93.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T02:53:43.295286",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_help_19c84eb8.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T02:53:45.188871",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_If_Youre_Not_Getting_Work_in_2026_Read_This_19c8bf0b.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T02:53:47.396439",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_I_want_to_connect_19c81e4b.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T02:58:42.968627",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_I_want_to_connect_19c8aeaa.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T02:58:46.089653",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_I_want_to_connect_19c8af50.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T02:58:47.520078",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_Keystone_Recruitment_is_hiring_in_Pakistan_19c88c29.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T02:58:57.028001",
+    "action_type": "task_approved_execution",
+    "actor": "approval_handler",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Done\\APPROVAL_EMAIL_GMAIL_help_19c84eb8.md",
+    "result": "success",
+    "details": {
+      "original_name": "APPROVAL_EMAIL_GMAIL_help_19c84eb8.md",
+      "execution_log": "Email successfully sent to cloudteachhub@gmail.com. Message ID: 19c8c833f1ceefde"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T02:59:44.968204",
+    "action_type": "task_approved_execution",
+    "actor": "approval_handler",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Done\\APPROVAL_LINKEDIN_FILE_LINKEDIN_Post.md",
+    "result": "success",
+    "details": {
+      "original_name": "APPROVAL_LINKEDIN_FILE_LINKEDIN_Post.md",
+      "execution_log": "successfully_posted"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T03:02:10.032025",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_MadiLinks_is_hiring_in_Pakistan_19c839c3.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T03:02:11.723921",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_National_Incubation_Center_Karachi_just_posted_som_19c81773.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T03:02:13.237109",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_New_Speakers__Workshops_Added_19c89980.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T03:02:16.262248",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_Second_Reminder_Pending_Payment__Urgent_Project_De_19c89724.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T03:02:17.752276",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_Tehreem_add_Hadiqa_Jalal_19c82c06.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T03:02:19.293981",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_Top_10_FREE_Visual_Studio_Code_Extensions_That_Act_19c885e3.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T03:02:22.571666",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_Urgent_Invoice_Budget__Meeting_Schedule_19c89578.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T03:03:22.338575",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_urgent_meeting_19c84f7e.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T03:03:27.194341",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_Why_Your_LinkedIn_Presence_Affects_Hiring_Outcomes_19c89f3a.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T03:03:28.929455",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_You_appeared_in_20_searches_19c82529.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T03:03:30.959065",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "GMAIL_You_appeared_in_20_searches_19c832e4.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T03:03:34.379640",
+    "action_type": "agent_drafting",
+    "actor": "drafting_agent",
+    "target": "WHATSAPP_Tehreem_Telinor_1771882862.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-02-24T03:06:00.583002",
+    "action_type": "task_approved_execution",
+    "actor": "approval_handler",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Done\\APPROVAL_EMAIL_GMAIL_Urgent_Invoice_Budget__Meeting_Schedule_19c89578.md",
+    "result": "success",
+    "details": {
+      "original_name": "APPROVAL_EMAIL_GMAIL_Urgent_Invoice_Budget__Meeting_Schedule_19c89578.md",
+      "execution_log": "Email successfully sent to cloudteachhub@gmail.com. Message ID: 19c8c89b44810269"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T03:06:31.126281",
+    "action_type": "task_approved_execution",
+    "actor": "approval_handler",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Done\\APPROVAL_WHATSAPP_WHATSAPP_Tehreem_Telinor_1771882862.md",
+    "result": "success",
+    "details": {
+      "original_name": "APPROVAL_WHATSAPP_WHATSAPP_Tehreem_Telinor_1771882862.md",
+      "execution_log": "successfully_sent"
+    }
+  }
+]
