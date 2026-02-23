@@ -205,6 +205,17 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 - `history/prompts/` — Prompt History Records
 - `history/adr/` — Architecture Decision Records
 - `.specify/` — SpecKit Plus templates and scripts
+- `AI_Employee_Vault/` — The Obsidian vault (Memory & GUI)
+
+## Project Commands & Skills
+
+### Core Heartbeat
+- `powershell.exe -File "src/run_senses.ps1"`: Run the full Perception & Action loop.
+
+### Custom CLI Skills
+- `vault-audit`: Run `python .claude/skills/vault-audit/vault_audit.py` to see vault status.
+- `social-expert`: Run `python .claude/skills/social-expert/social_expert.py "topic"` to draft LinkedIn posts.
+- `briefing-genius`: Run `python .claude/skills/briefing-genius/briefing_genius.py` to generate CEO briefing.
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.

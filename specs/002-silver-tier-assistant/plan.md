@@ -53,7 +53,9 @@ src/
 │   └── email_server.py      # MCP server for sending emails
 ├── utils/
 │   ├── planner.py           # Logic for creating Plan.md files
-│   └── credentials.py       # Secure env-based credential loader
+│   ├── credentials.py       # Secure env-based credential loader
+│   ├── social_draft.py      # LinkedIn drafting logic
+│   └── linkedin_post.py     # Playwright-based LinkedIn posting
 └── handlers/
     └── approval_handler.py  # Orchestrator for /Approved folder movements
 

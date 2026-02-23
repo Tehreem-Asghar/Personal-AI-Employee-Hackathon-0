@@ -60,11 +60,16 @@ As a project manager, I want the AI to create a `Plan.md` file before starting c
 
 ### User Story 4 - Automated Social Presence (Priority: P4)
 
-As a business owner, I want the AI to generate and suggest LinkedIn posts based on my business activity so that I can maintain a social presence with minimal effort.
+As a business owner, I want the AI to generate and automatically post content to LinkedIn after my approval so that I can maintain a social presence with minimal effort.
 
-**Why this priority**: Core Silver Tier requirement for business growth.
+**Why this priority**: Core Silver Tier requirement for business growth and external engagement.
 
-**Independent Test**: Add a "business milestone" file to `/Inbox` and verify a LinkedIn post draft appears in `/Pending_Approval`.
+**Independent Test**: Add a "business milestone" file to `/Inbox`, move the resulting draft from `/Pending_Approval` to `/Approved`, and verify the post appears on LinkedIn.
+
+**Acceptance Scenarios**:
+
+1. **Given** a business update in the vault, **When** Claude drafts a post, **Then** a `.md` file appears in `/Pending_Approval`.
+2. **Given** a LinkedIn draft in `/Approved`, **When** the Approval Handler runs, **Then** the post is published to LinkedIn via automation and moved to `/Done`.
 
 ---
 
@@ -82,7 +87,7 @@ As a business owner, I want the AI to generate and suggest LinkedIn posts based 
 - **FR-002**: System MUST include a WhatsApp Watcher using Playwright-based automation with a persistent browser context to maintain the session after a manual QR scan, filtering for messages with the same expanded keyword categories.
 - **FR-003**: System MUST implement an Email MCP server for sending messages.
 - **FR-004**: System MUST generate structured `Plan.md` files for any task requiring more than 2 steps.
-- **FR-005**: System MUST provide a mechanism to draft LinkedIn posts as `.md` files in the `/Pending_Approval` folder for human review.
+- **FR-005**: System MUST include a LinkedIn automation tool to draft and publish posts (after approval) using Playwright-based browser automation or LinkedIn API.
 - **FR-006**: System MUST use Windows Task Scheduler to run watchers every 15-30 minutes.
 
 ### Key Entities *(include if feature involves data)*
