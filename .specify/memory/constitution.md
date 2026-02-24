@@ -1,10 +1,11 @@
 <!--
 Sync Impact Report:
-- Version change: 1.2.0 -> 1.3.0
-- Added sections: Expanded Silver Tier requirements
-- Modified principles: Shifted current focus from Bronze to Silver Tier.
+- Version change: 1.3.0 -> 2.0.0 (Gold Tier)
+- Added sections: Gold Tier Mandates, Proactive Reasoning, Multi-Domain Integration
+- Modified principles: Shifted focus to full autonomy and business-critical operations.
 - Templates requiring updates:
-  - .specify/templates/plan-template.md (✅ updated for Silver)
+  - .specify/templates/plan-template.md (Needs Gold upgrade)
+  - .specify/templates/briefing-template.md (New required template)
 -->
 
 # Personal AI Employee (Digital FTE) Constitution
@@ -12,48 +13,52 @@ Sync Impact Report:
 ## Core Principles (Global)
 
 ### I. Local-First & Privacy-Centric
-All personal and business data MUST remain in the local Obsidian vault. Secrets MUST reside in environment variables or local secrets managers.
+All personal and business data MUST remain in the local Obsidian vault. Secrets (API keys, Odoo credentials) MUST reside in environment variables or local secrets managers.
 
-### II. Agent-Driven Autonomy
-The AI MUST monitor "Senses" (Watchers) 24/7 and use the "Ralph Wiggum" loop pattern for multi-step tasks.
+### II. Proactive Autonomy (The Gold Standard)
+The AI MUST NOT wait for user input. It MUST monitor "Senses" (Watchers) 24/7 and proactively initiate tasks based on `Business_Goals.md` and `Company_Handbook.md`.
 
-### III. Human-in-the-Loop (HITL) Safety
-Sensitive actions (payments/external comms) MUST require explicit human approval via `/Pending_Approval`.
+### III. The Ralph Wiggum Loop
+Autonomous multi-step tasks MUST use the "Ralph Wiggum" loop pattern, continuing to iterate until the task is marked as `[x] Complete` in `/Done` or maximum iterations are reached.
 
-### IV. Agent Engineering Architecture
-All functionality MUST be implemented as "Agent Skills" or MCP servers.
+### IV. Human-in-the-Loop (HITL) Safety
+All financial transactions (> $50) and outgoing public social posts MUST require human approval via `/Pending_Approval` before execution.
 
-### V. Transparency & Auditability
-Every action MUST be logged in standardized JSON format in `/Logs`.
-
-### VI. Resilience & Error Recovery
-Critical processes MUST be managed by a process manager (PM2) with exponential backoff retry logic.
+### V. Cross-Domain Intelligence
+The AI MUST bridge the gap between Personal (Gmail/WhatsApp) and Business (Odoo/LinkedIn/Twitter) domains to provide holistic insights.
 
 ---
 
 ## Tier-Specific Roadmap & Constraints
 
-### 🥉 Bronze Tier: The Foundation (Completed)
-1. **Senses**: ONE working Watcher script (File System).
-2. **Memory**: Obsidian vault structure verified.
-3. **Essential Documentation**: `Dashboard.md` and `Company_Handbook.md` established.
+### 🥇 Gold Tier: The Autonomous Employee (Current Focus)
+To achieve Gold status, the system MUST operate as a fully functional business unit:
+1. **Full Domain Integration**: Seamlessly manage both personal affairs and business operations within a single unified reasoning framework.
+2. **Accounting (The Hands)**: Integrate with **Odoo Community (v19+)** via a dedicated MCP server. All business transactions MUST be logged and audited through Odoo's JSON-RPC API.
+3. **Multi-Channel Social Presence**: Automatically generate, draft, and (after approval) post content to LinkedIn, Facebook, Instagram, and Twitter (X).
+4. **The CEO Briefing**: Generate a **"Monday Morning CEO Briefing"** every Sunday night. This report MUST summarize:
+   - Weekly Revenue (from Odoo).
+   - Bottlenecks (tasks that took > 48 hours).
+   - Proactive Suggestions (e.g., "I noticed a redundant $20 subscription; shall I cancel?").
+5. **Multiple MCP Servers**: Deploy specialized MCP servers for Email, Browser automation (Playwright), Odoo, and Social Media.
+6. **Resilient Orchestration**: Implement the `watchdog.py` health monitor to ensure all watchers and the orchestrator auto-restart upon failure.
+7. **Comprehensive Audit Logging**: Every AI action MUST be logged with `timestamp`, `action_type`, `actor`, `parameters`, and `approval_status`.
 
-### 🥈 Silver Tier: The Functional Assistant (Current Focus)
-To achieve Silver status, the system MUST expand its capabilities beyond the local foundation:
-1. **Expanded Senses**: Implement at least TWO more Watcher scripts (e.g., Gmail API and WhatsApp Web automation).
-2. **External Action (Hands)**: Implement one working MCP server for external actions (e.g., sending actual emails via Gmail).
-3. **Reasoning Loop**: Claude MUST generate structured `Plan.md` files in the `/Plans` folder before executing complex tasks.
-4. **Social Integration**: Ability to automatically generate and/or post content to LinkedIn to support business goals.
-5. **Operational HITL**: A formal human-approval workflow MUST be active for all outgoing communications to new contacts or any file deletion.
-6. **Scheduling**: Implement basic task scheduling using `cron` (Linux) or `Task Scheduler` (Windows) to trigger periodic AI audits.
+### 🥈 Silver Tier: The Functional Assistant (Legacy)
+- Expanded Senses (Gmail + WhatsApp).
+- Basic Reasoning Loop (`Plan.md` generation).
+- LinkedIn Integration.
 
-### 🥇 Gold Tier: The Autonomous Employee (Vision)
-- Full cross-domain integration (Personal + Business).
-- Odoo Accounting integration via MCP.
-- Weekly Business and Accounting Audit with CEO Briefing generation.
-- Ralph Wiggum loop for fully autonomous multi-step completion.
+### 🥉 Bronze Tier: The Foundation (Legacy)
+- Obsidian Vault structure.
+- Basic File System Watcher.
 
-## Governance
-This constitution supersedes all other practices. Silver Tier features MUST maintain compatibility with the Bronze foundation while introducing external integrations.
+---
 
-**Version**: 1.3.0 | **Ratified**: 2026-02-13 | **Last Amended**: 2026-02-17
+## Governance & Ethics
+This constitution is the supreme law of the Digital FTE. 
+1. **Transparency**: The AI MUST clearly state when it is acting autonomously vs. following a direct command.
+2. **Safety**: Never auto-approve payments to unknown recipients.
+3. **Graceful Degradation**: If an API (e.g., Gmail) is down, the AI MUST queue tasks locally and retry when service is restored.
+
+**Version**: 2.0.0 | **Ratified**: 2026-02-24 | **Last Amended**: 2026-02-24 | **Status**: ACTIVE - GOLD TIER MISSION
