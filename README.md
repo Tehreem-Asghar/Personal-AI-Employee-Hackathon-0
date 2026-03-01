@@ -12,6 +12,8 @@ The Bronze Tier establishes the core local infrastructure:
 -   **Claude Integration**: Claude Code successfully reads from and writes to the vault (simulated via file creation/modification).
 -   **Agent Skills**: All AI functionality (watchers, setup scripts) are structured as modular components.
 
+Video Link : ( https://youtu.be/tYQWcs0xjBo?si=5jdW_RkypEJwpIYJ )
+
 ## Architecture Overview (Bronze Tier Focus)
 
 The Bronze Tier focuses on the "Memory/GUI" (Obsidian) and "Senses" (Watchers) components of the overall AI Employee architecture.
@@ -125,6 +127,9 @@ $StartupTrigger = New-ScheduledTaskTrigger -AtStartup
 ```powershell
 Register-ScheduledTask -TaskName "AI_Employee_Heartbeat" -Action $Action -Trigger @($Trigger,$StartupTrigger) -Description "Digital FTE Perception & Action Loop"
 ```
+
+
+silver tier video link : ( https://youtu.be/5kiBmHJMszw?si=xtyhM0YwQCzUc6jH )
 
 ---
 
