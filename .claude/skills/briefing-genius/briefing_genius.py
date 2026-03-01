@@ -318,7 +318,10 @@ Examples:
     if args.output:
         output_path = Path(args.output)
     else:
-        output_path = vault_path / f"Daily_CEO_Briefing_{target_date.strftime('%Y-%m-%d')}.md"
+        # Save into a dedicated subfolder
+        briefings_dir = vault_path / "Briefings" / "Daily"
+        briefings_dir.mkdir(parents=True, exist_ok=True)
+        output_path = briefings_dir / f"Daily_CEO_Briefing_{target_date.strftime('%Y-%m-%d')}.md"
     
     if args.preview:
         # Handle Windows console encoding

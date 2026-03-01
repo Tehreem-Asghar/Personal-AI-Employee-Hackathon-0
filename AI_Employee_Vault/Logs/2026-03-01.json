@@ -1,0 +1,330 @@
+[
+  {
+    "timestamp": "2026-03-01T20:48:57.158564",
+    "action_type": "file_process",
+    "actor": "fs_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\FILE_ODOO_invoice_test.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-03-01T20:49:22.187354",
+    "action_type": "file_process",
+    "actor": "fs_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\FILE_SOCIAL_Facebook_Update.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-03-01T20:50:07.231184",
+    "action_type": "file_process",
+    "actor": "fs_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\FILE_SOCIAL_Instagram_Update.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-03-01T20:50:37.317618",
+    "action_type": "file_process",
+    "actor": "fs_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\FILE_SOCIAL_LinkedIn_Update.md",
+    "result": "success"
+  },
+  {
+    "timestamp": "2026-03-01T20:52:23.844242",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_March_2026_Update_Get_the_Newest_Update_of_the_AI__19caa189.md",
+    "result": "success",
+    "details": {
+      "subject": "\ud83c\udf89 March 2026 Update: Get the Newest Update of the AI Library (+ \ud83c\udf81 98$ GIFT INSIDE)",
+      "from": "\"AI Central | ChatGPT & Generative AI Tutorials, Prompts & Use Cases for Gemini, DeepSeek, Claude via LinkedIn\" <newsletters-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:24.376804",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_urgent_help_19ca961e.md",
+    "result": "success",
+    "details": {
+      "subject": "urgent help",
+      "from": "CloudTeach Hub <cloudteachhub@gmail.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:25.028384",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Urgent_Invoice_Budget__Meeting_Schedule_19ca9447.md",
+    "result": "success",
+    "details": {
+      "subject": "Urgent: Invoice, Budget & Meeting Schedule",
+      "from": "CloudTeach Hub <cloudteachhub@gmail.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:25.489407",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Monthly_uptime_report_-_February_2026_19ca933d.md",
+    "result": "success",
+    "details": {
+      "subject": "Monthly uptime report - February 2026",
+      "from": "UptimeRobot <info@uptimerobot.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:25.897911",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_PXL_Studio_is_hiring_in_Pakistan_19ca7a8f.md",
+    "result": "success",
+    "details": {
+      "subject": "PXL Studio is hiring in Pakistan",
+      "from": "LinkedIn Job Alerts <jobalerts-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:26.315552",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Youre_now_friends_with_2_others_See_their_photos_p_19ca7849.md",
+    "result": "success",
+    "details": {
+      "subject": "You're now friends with 2 others! See their photos, posts and more.",
+      "from": "Arham on Facebook <friends@facebookmail.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:26.747161",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_I_want_to_connect_19ca3cc2.md",
+    "result": "success",
+    "details": {
+      "subject": "I want to connect",
+      "from": "Aamna Ashraf Rajput <invitations@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:27.228917",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_PulseMediaNL_MENA_REGION_is_hiring_in_Pakistan_19ca2f06.md",
+    "result": "success",
+    "details": {
+      "subject": "PulseMediaNL (MENA REGION) is hiring in Pakistan",
+      "from": "LinkedIn Job Alerts <jobalerts-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:27.604579",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_I_want_to_connect_19ca2825.md",
+    "result": "success",
+    "details": {
+      "subject": "I want to connect",
+      "from": "Kiran Shahzadi <invitations@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:28.055177",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_I_Tried_New_Claude_Code_Ollama_Workflow__Its_Wild__19ca21e0.md",
+    "result": "success",
+    "details": {
+      "subject": "I Tried New Claude Code Ollama Workflow ( It\u2019s Wild & Free) | Joe Njenga",
+      "from": "Medium Daily Digest <noreply@medium.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:28.654269",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Tehreem_add_Maria_Khalid_-_Management_19ca05ea.md",
+    "result": "success",
+    "details": {
+      "subject": "Tehreem, add Maria Khalid - Management \ud83d\udcac",
+      "from": "LinkedIn <messages-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:29.016424",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Breaking_OpenAI_and_Amazon_announce_strategic_part_19c9fc48.md",
+    "result": "success",
+    "details": {
+      "subject": "Breaking: OpenAI and Amazon announce strategic partnership",
+      "from": "Amazon via LinkedIn <newsletters-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:29.402329",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Gemini_31_Pro_A_smarter_model_for_your_most_comple_19c9fa7c.md",
+    "result": "success",
+    "details": {
+      "subject": "\ud83d\ude80 Gemini 3.1 Pro: A smarter model for your most complex tasks",
+      "from": "Google AI Studio <googleaistudio-noreply@google.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:29.761790",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Take_30_seconds_and_transform_your_reading_experie_19c9f681.md",
+    "result": "success",
+    "details": {
+      "subject": "Take 30 seconds and transform your reading experience",
+      "from": "Medium <hello@medium.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:30.114006",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Tehreem_follow_Samir_Huda_-_Founder_at_The_People__19c9f1d1.md",
+    "result": "success",
+    "details": {
+      "subject": "Tehreem, follow Samir Huda - Founder at The People Order",
+      "from": "LinkedIn <messages-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:30.526311",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_I_want_to_connect_19c9ea58.md",
+    "result": "success",
+    "details": {
+      "subject": "I want to connect",
+      "from": "Bismah Kaleem <invitations@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:31.010206",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_National_Incubation_Center_Karachi_just_posted_som_19c9dca9.md",
+    "result": "success",
+    "details": {
+      "subject": "National Incubation Center Karachi just posted something that might be of interest to you",
+      "from": "LinkedIn <updates-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:31.321418",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Shaukat_just_messaged_you_19c9dc8d.md",
+    "result": "success",
+    "details": {
+      "subject": "Shaukat just messaged you",
+      "from": "Shaukat Ali via LinkedIn <messaging-digest-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:31.707721",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Elena_Building_a_Real_AI_Voice_Agent_for_Meallion_19c9db1d.md",
+    "result": "success",
+    "details": {
+      "subject": "Elena: Building a Real AI Voice Agent for Meallion",
+      "from": "Naveed Sarwar via LinkedIn <newsletters-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:52:32.065608",
+    "action_type": "gmail_perception",
+    "actor": "gmail_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\GMAIL_Humrahe_is_hiring_in_Pakistan_19c9d5c0.md",
+    "result": "success",
+    "details": {
+      "subject": "Humrahe is hiring in Pakistan",
+      "from": "LinkedIn Job Alerts <jobalerts-noreply@linkedin.com>"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T20:53:18.194417",
+    "action_type": "whatsapp_perception",
+    "actor": "whatsapp_watcher",
+    "target": "D:\\Personal AI Employee Hackathon 0\\personal-ai-employee-hackathon-0\\AI_Employee_Vault\\Needs_Action\\WHATSAPP_Tehreem_Telinor_1772380398.md",
+    "result": "success",
+    "details": {
+      "chat": "Tehreem Telinor"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T21:01:50.860459",
+    "action_type": "task_approved_execution",
+    "actor": "approval_handler",
+    "target": "APPROVAL_EMAIL_GMAIL_urgent_help_19ca961e.md",
+    "result": "success",
+    "details": {
+      "log": "Email successfully sent to CloudTeach Hub <cloudteachhub@gmail.com>. Message ID: 19caa2271e8f121d"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T21:01:53.606956",
+    "action_type": "task_approved_execution",
+    "actor": "approval_handler",
+    "target": "APPROVAL_EMAIL_GMAIL_Urgent_Invoice_Budget__Meeting_Schedule_19ca9447.md",
+    "result": "failure",
+    "details": {
+      "log": "An error occurred while sending email: <HttpError 400 when requesting https://gmail.googleapis.com/gmail/v1/users/me/messages/send?alt=json returned \"Invalid To header\". Details: \"[{'message': 'Invalid To header', 'domain': 'global', 'reason': 'invalidArgument'}]\">"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T21:02:09.482260",
+    "action_type": "task_approved_execution",
+    "actor": "approval_handler",
+    "target": "APPROVAL_ODOO_FILE_ODOO_invoice_test.md",
+    "result": "success",
+    "details": {
+      "log": "Odoo invoice 94 successfully posted."
+    }
+  },
+  {
+    "timestamp": "2026-03-01T21:02:12.145256",
+    "action_type": "task_approved_execution",
+    "actor": "approval_handler",
+    "target": "APPROVAL_SOCIAL_FILE_SOCIAL_Facebook_Update.md",
+    "result": "success",
+    "details": {
+      "log": "Social posts successfully dispatched."
+    }
+  },
+  {
+    "timestamp": "2026-03-01T21:02:21.839902",
+    "action_type": "task_approved_execution",
+    "actor": "approval_handler",
+    "target": "APPROVAL_SOCIAL_FILE_SOCIAL_Instagram_Update.md",
+    "result": "success",
+    "details": {
+      "log": "Social posts successfully dispatched."
+    }
+  },
+  {
+    "timestamp": "2026-03-01T21:04:00.813177",
+    "action_type": "task_approved_execution",
+    "actor": "approval_handler",
+    "target": "APPROVAL_SOCIAL_FILE_SOCIAL_LinkedIn_Update.md",
+    "result": "success",
+    "details": {
+      "log": "Social posts successfully dispatched."
+    }
+  },
+  {
+    "timestamp": "2026-03-01T21:04:58.984400",
+    "action_type": "task_approved_execution",
+    "actor": "approval_handler",
+    "target": "APPROVAL_WHATSAPP_WHATSAPP_Tehreem_Telinor_1772380398.md",
+    "result": "success",
+    "details": {
+      "log": "successfully_sent"
+    }
+  }
+]

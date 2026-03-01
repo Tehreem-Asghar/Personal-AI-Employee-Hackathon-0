@@ -1,13 +1,16 @@
+import sys
+import os
 from pathlib import Path
 import time
 import shutil
 from datetime import datetime
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
-import sys
 
 # Add the project root to the sys.path to allow imports from src
-sys.path.append(str(Path(__file__).parent.parent.parent))
+ROOT_DIR = Path(__file__).parent.parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.append(str(ROOT_DIR))
 
 from src.watchers.base_watcher import BaseWatcher
 from src.utils.paths import find_vault_root, get_inbox_path, get_needs_action_path
@@ -17,11 +20,11 @@ class FileSystemWatcher(BaseWatcher):
     def __init__(self, vault_path: Path, check_interval: int = 5):
         super().__init__(vault_path, check_interval)
         self.inbox_path = get_inbox_path(vault_path)
-        self.inbox_path.mkdir(parents=True, exist_ok=True) # Ensure Inbox exists
+        self.inbox_path.mkdir(parents=True, exist_ok=True)
 
         self.observer = Observer()
         self.event_handler = self._create_event_handler()
-        self.observed_events = [] # To store events for processing in check_for_updates
+        self.observed_events = []
 
     def _create_event_handler(self):
         class Handler(FileSystemEventHandler):
@@ -32,93 +35,65 @@ class FileSystemWatcher(BaseWatcher):
             def on_created(self, event):
                 if not event.is_directory:
                     self.watcher.observed_events.append(event)
-                    self.watcher.logger.info(f"Detected new file: {event.src_path}")
             
             def on_moved(self, event):
-                # Handle move event as creation in case of external move into inbox
                 if not event.is_directory and Path(event.dest_path).parent == self.watcher.inbox_path:
                     self.watcher.observed_events.append(event)
-                    self.watcher.logger.info(f"Detected moved file into inbox: {event.dest_path}")
-
 
         return Handler(self)
 
     def check_for_updates(self) -> list:
-        # Process observed events
         events_to_process = self.observed_events
-        self.observed_events = [] # Clear the list
+        self.observed_events = []
         return events_to_process
 
     def create_action_file(self, event) -> Path:
-        source_path = Path(event.src_path)
-        # Handle move events where src_path is the original location
-        if event.event_type == 'moved':
-            source_path = Path(event.dest_path)
+        source_path = Path(event.src_path if event.event_type != 'moved' else event.dest_path)
+        if not source_path.is_file(): return None
 
-        if not source_path.is_file(): # Ensure it's a file
-            return
-
-        # Define destination path in Needs_Action folder
+        # UNIFIED WORKFLOW (Like Gmail): Merge metadata into the file
         file_name = source_path.name
-        dest_file_name = f"FILE_{file_name}"
-        dest_path_in_needs_action = self.needs_action_path / dest_file_name
+        dest_name = f"FILE_{file_name}"
+        if not dest_name.endswith(".md"): dest_name += ".md"
+        
+        dest_path = self.needs_action_path / dest_name
 
-        # Move the file
         try:
-            shutil.move(str(source_path), str(dest_path_in_needs_action))
-            self.logger.info(f"Moved '{source_path}' to '{dest_path_in_needs_action}'")
-            log_event(
-                action_type="file_move",
-                actor="fs_watcher",
-                target=str(dest_path_in_needs_action),
-                result="success",
-                details={"original_path": str(source_path)}
-            )
-        except Exception as e:
-            self.logger.error(f"Failed to move file {source_path}: {e}")
-            log_event(
-                action_type="file_move",
-                actor="fs_watcher",
-                target=str(source_path),
-                result="failure",
-                details={"error": str(e)}
-            )
-            raise # Re-raise to be caught by run() method's error handling
-
-        # Create metadata .md file
-        meta_file_path = dest_path_in_needs_action.with_suffix('.md')
-        meta_content = f"""---
+            # Read original content
+            original_content = source_path.read_text(encoding='utf-8', errors='ignore')
+            
+            # Create professional metadata header (Gmail style)
+            meta_header = f"""---
 type: file_drop
+from: local_system
 original_name: {file_name}
-size: {source_path.stat().st_size if source_path.exists() else 'N/A'}
 received: {datetime.now().isoformat()}
 status: new
 ---
 # File Drop: {file_name}
 
-New file detected and moved for processing.
+{original_content}
 """
-        meta_file_path.write_text(meta_content)
-        self.logger.info(f"Created metadata file: {meta_file_path}")
-        log_event(
-            action_type="metadata_create",
-            actor="fs_watcher",
-            target=str(meta_file_path),
-            result="success",
-            details={"original_file": str(dest_path_in_needs_action)}
-        )
-
-        return meta_file_path
+            # Write to single file in Needs_Action
+            dest_path.write_text(meta_header, encoding='utf-8')
+            
+            # Delete original from Inbox
+            source_path.unlink()
+            
+            self.logger.info(f"Processed: {file_name} -> {dest_name}")
+            log_event("file_process", "fs_watcher", str(dest_path), "success")
+            return dest_path
+        except Exception as e:
+            self.logger.error(f"Error: {e}")
+            return None
 
     def run(self):
-        self.logger.info(f'Starting {self.__class__.__name__} watcher for: {self.inbox_path}')
+        self.logger.info(f'Starting FS watcher for: {self.inbox_path}')
         self.observer.schedule(self.event_handler, str(self.inbox_path), recursive=False)
         self.observer.start()
         try:
             while True:
-                # BaseWatcher's run loop now calls check_for_updates() and create_action_file()
-                # The observer is just feeding events to self.observed_events
-                super().run() 
+                super().run()
         except KeyboardInterrupt:
             self.observer.stop()
         self.observer.join()
@@ -126,30 +101,19 @@ New file detected and moved for processing.
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("--once", action="store_true", help="Run the watcher only once and exit")
+    parser.add_argument("--once", action="store_true")
     args = parser.parse_args()
 
     try:
         vault_root = find_vault_root()
         fs_watcher = FileSystemWatcher(vault_root)
-        # For fs_watcher, 'once' might just process existing files in Inbox
         if args.once:
-            print(f"\n--- 📁 FILE SYSTEM PERCEPTION LAYER ---")
-            # Manually trigger a check for existing files
-            from watchdog.events import FileCreatedEvent
             inbox = get_inbox_path(vault_root)
-            found_files = 0
+            from watchdog.events import FileCreatedEvent
             for file in inbox.iterdir():
                 if file.is_file():
-                    found_files += 1
-                    action_file = fs_watcher.create_action_file(FileCreatedEvent(str(file)))
-                    print(f"   ✅ Detected & Processed: {file.name} -> {action_file.name}")
-            
-            if found_files == 0:
-                print("   ℹ️  Inbox is clean. No new files to process.")
-            
-            print("--- FILE SYSTEM CHECK COMPLETE ---\n")
+                    fs_watcher.create_action_file(FileCreatedEvent(str(file)))
         else:
             fs_watcher.run()
     except Exception as e:
-        print(f"Failed to start File System Watcher: {e}")
+        print(f"Error: {e}")

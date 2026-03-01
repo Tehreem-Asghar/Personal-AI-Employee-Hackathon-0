@@ -1,6 +1,6 @@
-# Personal AI Employee Hackathon - Bronze Tier Foundation
+# Personal AI Employee Hackathon - Digital FTE
 
-This repository contains the foundational implementation for the "Personal AI Employee Hackathon" focusing on the Bronze Tier deliverables. The goal is to set up a local-first, agent-driven system that proactively manages personal and business affairs.
+This repository contains the implementation for the "Personal AI Employee Hackathon," evolving from a Bronze Tier foundation into a full **Gold Tier Autonomous Employee**.
 
 ## Bronze Tier Deliverables (Minimum Viable)
 
@@ -128,6 +128,33 @@ Register-ScheduledTask -TaskName "AI_Employee_Heartbeat" -Action $Action -Trigge
 
 ---
 
+## 🥇 Gold Tier: Autonomous Employee
+
+Gold Tier transforms the assistant into a proactive business unit.
+
+### 1. Odoo ERP Integration (Financial Hands)
+The system is integrated with **Odoo Community (v18+)** for professional bookkeeping.
+- **Tools**: Generate invoices, log business transactions, and audit recurring subscriptions.
+- **Safety**: Financial actions like posting invoices require human approval via `/Pending_Approval`.
+
+### 2. Multi-Channel Social Presence
+Unified drafting and live posting to multiple platforms:
+- **Meta API**: Direct posting to **Facebook Pages** and **Instagram Business** accounts.
+- **Twitter/X API**: Automated tweet drafting.
+- **LinkedIn**: Continued support via Playwright browser automation.
+
+### 3. Ralph Wiggum Autonomous Loop
+A custom persistence layer using `.system/state.json` that allows the AI to iterate on complex tasks autonomously. The agent can now self-correct and continue working until a task is moved to `/Done`.
+
+### 4. Executive Reporting (CEO Briefing)
+Automated **Monday Morning CEO Briefings** synthesized every Sunday night.
+- **Content**: Weekly revenue from Odoo, productivity stats from the vault, and proactive bottleneck analysis.
+
+### 5. Guardian Watchdog (Resilience)
+A master health monitor (`src/watchers/guardian.py`) that monitors all 24/7 background processes. It automatically restarts failed watchers and notifies the user via Email/WhatsApp.
+
+---
+
 ## 🛠️ Claude CLI Skills
 
 This project leverages specialized Claude Code skills to manage the vault and generate creative content.
@@ -151,15 +178,6 @@ Analyzes completed work and generates a Daily CEO Briefing.
 ```bash
 # Generate today's briefing
 python .claude/skills/briefing-genius/briefing_genius.py
-
-# Generate briefing for a specific date
-python .claude/skills/briefing-genius/briefing_genius.py --date 2026-02-22
-
-# Preview briefing in console without saving
-python .claude/skills/briefing-genius/briefing_genius.py --preview
-
-# Use a custom vault path
-python .claude/skills/briefing-genius/briefing_genius.py --vault-path "D:\path\to\AI_Employee_Vault"
 ```
 
 # Temporary Stop commands of Task Scheduler  
@@ -174,3 +192,6 @@ Disable-ScheduledTask -TaskName "AI_Employee_Heartbeat"
 ```powershell
 Enable-ScheduledTask -TaskName "AI_Employee_Heartbeat"
 ```
+
+---
+*Originally built as a Bronze Tier Foundation, now upgraded to Gold Tier Autonomy for the Personal AI Employee Hackathon 2026.*
