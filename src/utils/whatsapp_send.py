@@ -105,25 +105,33 @@ def send_whatsapp_message(contact_name: str, message_body: str):
             if not chat_found:
                 raise Exception(f"Contact '{contact_name}' not found")
             
-            page.wait_for_timeout(2000)
+            page.wait_for_timeout(3000) # Wait more for chat to load
 
             # 3. Find message input box - try multiple selectors
-            message_box = page.locator('[data-testid="conversation-compose-box-input"], div[contenteditable="true"][data-tab="10"], div[contenteditable="true"][role="textbox"]').first
-            message_box.click()
-            page.wait_for_timeout(500)
-            message_box.fill(message_body)
-            page.wait_for_timeout(1000)
+            # WhatsApp often needs focus before it accepts input
+            message_box = page.locator('div[contenteditable="true"][role="textbox"]').last # The last one is usually the active chat box
             
-            # Press Enter to send
-            send_button = page.locator('[data-testid="compose-btn-send"]').first
-            if send_button.count() > 0:
-                send_button.click()
-            else:
+            if message_box.count() == 0:
+                # Fallback to testid
+                message_box = page.locator('[data-testid="conversation-compose-box-input"]').first
+
+            if message_box.count() > 0:
+                message_box.click()
+                page.wait_for_timeout(1000)
+                
+                # Use type instead of fill for contenteditable
+                message_box.type(message_body, delay=100)
+                page.wait_for_timeout(1000)
+                
+                # Press Enter
                 message_box.press("Enter")
-            
-            print(f"Successfully sent WhatsApp message to {contact_name}")
-            browser.close()
-            return "successfully_sent"
+                page.wait_for_timeout(2000) # Wait for message to actually send
+                
+                print(f"Successfully sent WhatsApp message to {contact_name}")
+                browser.close()
+                return "successfully_sent"
+            else:
+                raise Exception("Message input box not found")
 
         except Exception as e:
             print(f"Error sending WhatsApp message: {e}")

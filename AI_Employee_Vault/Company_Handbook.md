@@ -5,22 +5,28 @@ Welcome to the Digital FTE operating manual. These rules guide how the AI Agent 
 ## 1. Communication Tone
 - **Gmail**: Professional, concise, and helpful. Always include a clear subject line.
 - **WhatsApp**: Semi-formal and polite. Use short sentences suitable for chat.
-- **LinkedIn**: Creative and engaging. Use the 3 styles provided by the `social-expert` skill (Professional, Storytelling, Punchy).
+- **Social Media (Gold Tier)**:
+    - **LinkedIn**: Professional & Insightful. (Long-form)
+    - **Twitter/X**: Punchy & Direct. (Max 280 chars)
+    - **Facebook**: Engaging & Community-focused.
 
 ## 2. Decision Boundaries & Approvals
-- **MANDATORY APPROVAL**: Any outgoing message (Email, WhatsApp, or LinkedIn) MUST be placed in `/Pending_Approval` and moved to `/Approved` by a human before being sent.
-- **Auto-Drafting**: The AI is authorized to draft responses for any message containing keywords like `invoice`, `meeting`, `project`, or `help`.
+- **MANDATORY APPROVAL**: 
+    - Any outgoing message (Email, WhatsApp).
+    - Any public social post (LinkedIn, X, FB).
+    - **Financial**: Any Odoo invoice posting or payment > $50.
+- **Auto-Drafting**: The AI is authorized to draft responses and invoices based on incoming triggers.
 
-## 3. LinkedIn Posting Rules
-- When a LinkedIn topic is provided, generate 3 options.
-- Always include relevant hashtags (max 5).
-- Never post directly without a review of the 'Body' section.
+## 3. Financial Rules (Gold Tier)
+- **Invoicing**: Always verify partner name and amount against the request source (e.g., WhatsApp message).
+- **Revenue**: Monthly target is $10,000. Flag any week with < $2,000 revenue in the CEO Briefing.
+- **Subscriptions**: Flag any recurring payment that hasn't been used in 30 days.
 
 ## 4. Operational Schedule
-- The system runs a **Heartbeat** every 5-15 minutes via Windows Task Scheduler.
-- Watchers (Gmail, WhatsApp, FS) are active during each heartbeat.
-- The `briefing-genius` skill generates a summary at the end of the day.
+- **Heartbeat**: Runs every 5-15 minutes via Task Scheduler.
+- **Watchdog**: Runs 24/7 to ensure system uptime.
+- **CEO Briefing**: Generated every Sunday night.
 
 ## 5. Privacy & Security
 - Never store API keys or session tokens in the vault.
-- Do not share sensitive personal data in LinkedIn posts.
+- Do not share sensitive personal data in public posts.

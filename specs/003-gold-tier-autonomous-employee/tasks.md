@@ -17,9 +17,9 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Initialize Gold Tier environment and verify Odoo installation at http://localhost:8069
-- [ ] T002 [P] Install dependencies: `odoorpc`, `tweepy`, `facebook-sdk`, `python-linkedin-v2`, `psutil`
-- [ ] T003 [P] Configure `.env` with Odoo and Social API credentials per `quickstart.md`
+- [X] T001 Initialize Gold Tier environment and verify Odoo installation at http://localhost:8069
+- [X] T002 [P] Install dependencies: `odoorpc`, `tweepy`, `facebook-sdk`, `python-linkedin-v2`, `psutil`
+- [X] T003 [P] Configure `.env` with Odoo and Social API credentials per `quickstart.md`
 
 ---
 
@@ -27,10 +27,10 @@
 
 **Purpose**: Core infrastructure that MUST be complete before ANY user story can be implemented
 
-- [ ] T004 Create system directory `AI_Employee_Vault/.system/` for state persistence
-- [ ] T005 [P] Implement base `OdooClient` wrapper in `src/utils/odoo_client.py`
-- [ ] T006 [P] Implement base `SocialClient` wrapper in `src/utils/social_client.py`
-- [ ] T007 Setup environment variable loader for new Gold Tier secrets in `src/utils/credentials.py`
+- [X] T004 Create system directory `AI_Employee_Vault/.system/` for state persistence
+- [X] T005 [P] Implement base `OdooClient` wrapper in `src/utils/odoo_client.py`
+- [X] T006 [P] Implement base `SocialClient` wrapper in `src/utils/social_client.py`
+- [X] T007 Setup environment variable loader for new Gold Tier secrets in `src/utils/credentials.py`
 
 **Checkpoint**: Foundation ready - user story implementation can now begin
 
@@ -44,11 +44,11 @@
 
 ### Implementation for User Story 1
 
-- [ ] T008 [US1] Create Odoo MCP server in `src/mcp/odoo_server.py`
-- [ ] T009 [US1] Implement `get_revenue` capability in `src/mcp/odoo_server.py`
-- [ ] T010 [US1] Implement `log_transaction` capability in `src/mcp/odoo_server.py`
-- [ ] T011 [US1] Implement `audit_subscriptions` capability in `src/mcp/odoo_server.py`
-- [ ] T012 [US1] Add HITL gate for Odoo `posted` state in `src/handlers/approval_handler.py`
+- [X] T008 [US1] Create Odoo MCP server in `src/mcp/odoo_server.py`
+- [X] T009 [US1] Implement `get_revenue` capability in `src/mcp/odoo_server.py`
+- [X] T010 [US1] Implement `log_transaction` capability in `src/mcp/odoo_server.py`
+- [X] T011 [US1] Implement `audit_subscriptions` capability in `src/mcp/odoo_server.py`
+- [X] T012 [US1] Add HITL gate for Odoo `posted` state in `src/handlers/approval_handler.py`
 
 **Checkpoint**: User Story 1 functional - Odoo integration verified.
 
@@ -62,10 +62,10 @@
 
 ### Implementation for User Story 2
 
-- [ ] T013 [US2] Create state schema and persistence logic in `AI_Employee_Vault/.system/state.json`
-- [ ] T014 [US2] Upgrade `src/agents/orchestrator.py` with the Ralph Wiggum re-injection loop
-- [ ] T015 [US2] Implement iteration counter (Max 10) in `src/agents/orchestrator.py`
-- [ ] T016 [US2] Add `/Done` folder check to trigger loop termination in `src/agents/orchestrator.py`
+- [X] T013 [US2] Create state schema and persistence logic in `AI_Employee_Vault/.system/state.json`
+- [X] T014 [US2] Upgrade `src/agents/orchestrator.py` with the Ralph Wiggum re-injection loop
+- [X] T015 [US2] Implement iteration counter (Max 10) in `src/agents/orchestrator.py`
+- [X] T016 [US2] Add `/Done` folder check to trigger loop termination in `src/agents/orchestrator.py`
 
 **Checkpoint**: User Story 2 functional - AI now iterates autonomously.
 
@@ -79,11 +79,11 @@
 
 ### Implementation for User Story 3
 
-- [ ] T017 [US3] Create Social MCP server in `src/mcp/social_server.py`
-- [ ] T018 [US3] Implement Twitter/X posting in `src/utils/social_client.py` using `tweepy`
-- [ ] T019 [US3] Implement Meta (FB/IG) posting in `src/utils/social_client.py` using `facebook-sdk`
-- [ ] T020 [US3] Unify social drafting logic in `src/utils/social_draft.py` to handle 4 platforms
-- [ ] T021 [US3] Update `src/agents/drafting_agent.py` to support multi-platform content generation
+- [X] T017 [US3] Create Social MCP server in `src/mcp/social_server.py`
+- [X] T018 [US3] Implement Twitter/X posting in `src/utils/social_client.py` using `tweepy`
+- [X] T019 [US3] Implement Meta (FB/IG) posting in `src/utils/social_client.py` using `facebook-sdk`
+- [X] T020 [US3] Unify social drafting logic in `src/utils/social_draft.py` to handle 4 platforms
+- [X] T021 [US3] Update `src/agents/drafting_agent.py` to support multi-platform content generation
 
 **Checkpoint**: User Story 3 functional - Multi-channel social drafting active.
 
@@ -97,10 +97,10 @@
 
 ### Implementation for User Story 4
 
-- [ ] T022 [US4] Implement CEO Briefing generator in `src/agents/briefing_agent.py` (upgrading Briefing Genius)
-- [ ] T023 [US4] Add Odoo revenue fetching to briefing logic in `src/agents/briefing_agent.py`
-- [ ] T024 [US4] Add productivity bottleneck analysis (cycle time > 48h) in `src/agents/briefing_agent.py`
-- [ ] T025 [US4] Configure Sunday night trigger in `src/run_senses.ps1`
+- [X] T022 [US4] Implement CEO Briefing generator in `src/agents/briefing_agent.py` (upgrading Briefing Genius)
+- [X] T023 [US4] Add Odoo revenue fetching to briefing logic in `src/agents/briefing_agent.py`
+- [X] T024 [US4] Add productivity bottleneck analysis (cycle time > 48h) in `src/agents/briefing_agent.py`
+- [X] T025 [US4] Configure Sunday night trigger in `src/run_senses.ps1`
 
 **Checkpoint**: User Story 4 functional - Executive briefings active.
 
@@ -114,10 +114,10 @@
 
 ### Implementation for User Story 5
 
-- [ ] T026 [US5] Implement master health monitor in `src/watchers/watchdog.py` using `psutil`
-- [ ] T027 [US5] Implement process restart logic for all watchers in `src/watchers/watchdog.py`
-- [ ] T028 [US5] Add Email/WhatsApp notification logic for failures in `src/utils/notifications.py`
-- [ ] T029 [US5] Integrate notifications into `src/watchers/watchdog.py`
+- [X] T026 [US5] Implement master health monitor in `src/watchers/watchdog.py` using `psutil`
+- [X] T027 [US5] Implement process restart logic for all watchers in `src/watchers/watchdog.py`
+- [X] T028 [US5] Add Email/WhatsApp notification logic for failures in `src/utils/notifications.py`
+- [X] T029 [US5] Integrate notifications into `src/watchers/watchdog.py`
 
 **Checkpoint**: User Story 5 functional - System is now self-healing and communicative.
 
@@ -127,7 +127,7 @@
 
 **Purpose**: Final hardening and documentation.
 
-- [ ] T030 [P] Update `AI_Employee_Vault/Company_Handbook.md` with Gold Tier rules
+- [X] T030 [P] Update `AI_Employee_Vault/Company_Handbook.md` with Gold Tier rules
 - [ ] T031 [P] Standardize all JSON audit logs across Odoo and Social MCPs
 - [ ] T032 Run full `quickstart.md` validation on a clean environment
 - [ ] T033 Final code cleanup and refactoring of `orchestrator.py`

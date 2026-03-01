@@ -1,3 +1,26 @@
+[project]
+name = "personal-ai-employee"
+version = "0.1.0"
+description = "Autonomous Digital FTE for Personal and Business management."
+authors = [{ name = "AI Employee Team" }]
+requires-python = ">=3.13"
+dependencies = [
+    "google-api-python-client",
+    "google-auth-oauthlib",
+    "google-auth-httplib2",
+    "python-dotenv",
+    "playwright",
+    "watchdog",
+    "openai",
+    "openai-agents",
+    "mcp",
+    "odoorpc>=0.10.1",
+    "tweepy>=4.16.0",
+    "facebook-sdk>=3.1.0",
+    "psutil>=7.2.2",
+    "python-linkedin-v2>=0.9.4",
+]
+
 [tool.black]
 line-length = 88
 target-version = ['py313']
